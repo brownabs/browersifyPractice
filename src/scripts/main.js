@@ -1,8 +1,11 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+/*
+    Author: Abbey
+    Name: main.js
+    Purpose: Entry point of my application
+*/
 
-sayHello()
-sayGoodbye()
+import contactForm from "./contactForm"
+import contactList from "./contactList"
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+contactForm()
+contactList()
