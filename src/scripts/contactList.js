@@ -9,15 +9,15 @@ import API from "./contactCollection";
 import contactHTML from "./contact"
 import printToDom from "./printToDom";
 
-const contactList = function() {
+const contactList = function () {
     API.getContactList()
-    .then(contact => {
-        console.log(contact)
-    contact.forEach(newEntry => {
-            const html = contactHTML.createContactHTML(newEntry)
-            printToDom(html)
+        .then(contact => {
+            console.log(contact)
+            contact.forEach(newEntry => {
+                const html = contactHTML.createContactHTML(newEntry)
+                printToDom(html)
+            })
         })
-    })
 }
 
 export default contactList
